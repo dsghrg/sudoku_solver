@@ -17,7 +17,7 @@ solve(Rows) :-
 	blocks(A, B, C), blocks(D, E, F), blocks(G, H, I),
 	maplist(label, Rows).
 
-length_(L, Ls) :- length(Ls, L).  % version of length that's easierto use with maplist (above)
+length_(X, Rows) :- length(Rows, X).  % version of length that's easierto use with maplist (above)
 
 % this predicate ensures a "block" (3x3 grid) contains only distinct valueis
 blocks([], [], []).
