@@ -1,5 +1,5 @@
 % sudoku solver
-% this program is written in swi-prolog
+
 :- use_module(library(clpfd)).
 
 sudoku(Rows) :-
